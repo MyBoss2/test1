@@ -1,11 +1,14 @@
 package com.cc.dao;
 
+import org.springframework.stereotype.Repository;
+
 @Repository
 public class Car {
     private int id;
     private String brand;
     private String model;
     private String color;
+    private String engine;
 
     public int getId() {
         return id;
@@ -37,5 +40,13 @@ public class Car {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public String getEngine() {
+        return engine;
+    }
+
+    public void setEngine(String engine) {
+        this.engine = engine;
     }
 }

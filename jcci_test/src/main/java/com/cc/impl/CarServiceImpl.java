@@ -12,8 +12,10 @@ public class CarServiceImpl implements CarService {
     @Override
     public void updateCaR(Car car) {
         Car car2 = new Car();
+        car2.setId(car.getId());
+        car2.setColor("red");
         System.out.println("测试修改");
-        carMapper.deleteByPrimaryKey(car.getId());
+        carMapper.deleteByPrimaryKey(car2.getId());
     }
 
     @Override
